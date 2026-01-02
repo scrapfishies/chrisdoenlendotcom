@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Chris Doenlen</title>
+    <style>
+        body {
+            font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #fff;
+            color: #000;
+        }
+        .container {
+            text-align: left;
+            width: 100%;
+            max-width: 400px;
+            padding: 1rem;
+        }
+        h1 {
+            font-weight: 400;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        h1 a {
+            color: #000;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+            font-size: 1rem;
+        }
+        input, textarea {
+            font-family: inherit;
+            font-size: 1rem;
+            padding: 0.5rem;
+            border: 1px solid #000;
+            background: #fff;
+        }
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+        button {
+            font-family: inherit;
+            font-size: 1rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid #000;
+            background: #fff;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+        button:hover {
+            background: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><a href="index.html">&larr; Chris Doe(nlen)</a></h1>
+        <form action="https://formspree.io/f/mnjndkdv" method="POST">
+            <label>
+                Your email:
+                <input type="email" name="email" required>
+            </label>
+            <label>
+                Message:
+                <textarea name="message" required></textarea>
+            </label>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</body>
+</html>
